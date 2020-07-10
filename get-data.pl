@@ -19,10 +19,10 @@ $0 - Obtains data on the number of cases of corona virus in Brazil.
 Usage: $0 [options]
 
 Options:
-	-h, --help			Show this help message and exit.
-	-o, --output		A file to save the data to (just show it by default).
-	-r, --region		The region from which you want to obtain data.
-	-s, --state			The state from which you want to obtain data.
+    -h, --help          Show this help message and exit.
+    -o, --output        A file to save the data to (just show it by default).
+    -r, --region        The region from which you want to obtain data.
+    -s, --state         The state from which you want to obtain data.
 
 HELP
 	exit(0);
@@ -157,7 +157,7 @@ print STDOUT "Índice\tData\tCasos\n";
 #Show/save the data
 for my $date (@sorted)
 {
-	print STDOUT "$index\t$date/2020\t$sorting{$date}\n";
+	print STDOUT "$index\t$date\t$sorting{$date}\n";
 	$index ++;
 }
 
